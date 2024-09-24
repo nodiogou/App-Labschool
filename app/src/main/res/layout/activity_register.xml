@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="306dp"
-        android:layout_height="191dp"
+        android:layout_width="305dp"
+        android:layout_height="195dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="50dp"
@@ -35,6 +35,7 @@
         app:endIconTint="#0069CB"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:startIconTint="#0069CB"
@@ -99,7 +100,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:hint="Senha"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"  />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -112,7 +113,6 @@
         android:backgroundTint="#0069CB"
         android:text="Registrar"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
@@ -121,8 +121,8 @@
     <Button
         android:id="@+id/login2"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="92dp"
-        android:layout_height="0dp"
+        android:layout_width="70dp"
+        android:layout_height="71dp"
         android:layout_marginBottom="69dp"
         android:text="Login"
         android:textColor="@color/design_default_color_error"
