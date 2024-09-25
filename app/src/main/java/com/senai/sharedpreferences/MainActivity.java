@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText inputPass;
     private Button btnLogin;
     private MaterialSwitch switchLogin;
+    private Button btnCriar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         inputPass = findViewById(R.id.pass);
         btnLogin = findViewById(R.id.login);
         switchLogin = findViewById(R.id.switchLogin);
+        btnCriar = findViewById(R.id.criar);
 
         //Criando um arquivo compartilhável  para armazenar dados do usuário em modo privado
         //O MODE_PRIVATE permite que apenas a aplicação possa acessar o arquivo
@@ -69,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
 
                 finish(); //Finalizar a execução da activity atual
+            }
+        });
+
+        btnCriar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }
